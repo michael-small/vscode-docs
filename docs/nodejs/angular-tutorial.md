@@ -6,7 +6,7 @@ MetaSocialImage: images/angular/Welcome-to-app.png
 ---
 # Using Angular in Visual Studio Code
 
-[Angular](https://angular.io/) is a popular web development platform developed and maintained by Google. Angular uses [TypeScript](/docs/languages/typescript.md) as its main programming language. The Visual Studio Code editor supports TypeScript IntelliSense and code navigation out of the box, so you can do Angular development without installing any other extension.
+[Angular](https://angular.dev/) is a popular web development platform developed and maintained by Google. Angular uses [TypeScript](/docs/languages/typescript.md) as its main programming language. The Visual Studio Code editor supports TypeScript IntelliSense and code navigation out of the box, so you can do Angular development without installing any other extension.
 
 ![Welcome to app](images/angular/Welcome-to-app.png)
 
@@ -14,7 +14,7 @@ MetaSocialImage: images/angular/Welcome-to-app.png
 
 ## Welcome to Angular
 
-We'll be using the [Angular CLI](https://cli.angular.io/) for this tutorial. To install and use the command line interface as well as run the Angular application server, you'll need the [Node.js](https://nodejs.org/) JavaScript runtime and [npm](https://www.npmjs.com/) (the Node.js package manager) installed. npm is included with Node.js which you can install from [Node.js downloads](https://nodejs.org/en/download/).
+We'll be using the [Angular CLI](https://cli.angular.dev/) for this tutorial. To install and use the command line interface as well as run the Angular application server, you'll need the [Node.js](https://nodejs.org/) JavaScript runtime and [npm](https://www.npmjs.com/) (the Node.js package manager) installed. npm is included with Node.js which you can install from [Node.js downloads](https://nodejs.org/en/download/).
 
 >**Tip**: To test that you have Node.js and npm correctly installed on your machine, you can type `node --version` and `npm --version`.
 

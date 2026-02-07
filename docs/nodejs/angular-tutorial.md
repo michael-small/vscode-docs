@@ -50,7 +50,7 @@ code .
 
 ### Syntax highlighting and bracket matching
 
-Now expand the `src\app` folder and select the `app.component.ts` file. You'll notice that VS Code has syntax highlighting for the various source code elements and, if you put the cursor on a parenthesis, the matching bracket is also selected.
+Now expand the `src\app` folder and select the `app.ts` file. You'll notice that VS Code has syntax highlighting for the various source code elements and, if you put the cursor on a parenthesis, the matching bracket is also selected.
 
 ![angular bracket matching](images/angular/bracket-matching.png)
 
@@ -60,7 +60,7 @@ As you hover your mouse over text in the file, you'll see that VS Code gives you
 
 ![angular decorator hover](images/angular/decorator-hover.png)
 
-As you start typing in `app.component.ts`, you'll see smart suggestions and code snippets.
+As you start typing in `app.ts`, you'll see smart suggestions and code snippets.
 
 ![angular suggestions](images/angular/suggestions.png)
 
@@ -72,7 +72,7 @@ VS Code uses the TypeScript language service for code intelligence ([IntelliSens
 
 ### Go to Definition, Peek definition
 
-Through the TypeScript language service, VS Code can also provide type definition information in the editor through **Go to Definition** (`kb(editor.action.revealDefinition)`) or **Peek Definition** (`kb(editor.action.peekDefinition)`). Open the `app.module.ts` file and put the cursor over `AppComponent` in the `bootstrap` property declaration, right click and select **Peek Definition**. A [Peek window](/docs/editing/editingevolved.md#peek) will open showing the `AppComponent` definition from `app.component.ts`.
+Through the TypeScript language service, VS Code can also provide type definition information in the editor through **Go to Definition** (`kb(editor.action.revealDefinition)`) or **Peek Definition** (`kb(editor.action.peekDefinition)`). Open the `app.module.ts` file and put the cursor over `App` in the `bootstrap` property declaration, right click and select **Peek Definition**. A [Peek window](/docs/editing/editingevolved.md#peek) will open showing the `App` definition from `app.ts`.
 
 ![angular peek definition](images/angular/peek-definition.png)
 
@@ -80,7 +80,7 @@ Press `kbstyle(Escape)` to close the Peek window.
 
 ## Hello World
 
-Let's update the sample application to "Hello World". Go back to the `app.component.ts` file and change the `title` string in `AppComponent` to "Hello World".
+Let's update the sample application to "Hello World". Go back to the `app.ts` file and change the `title` string in `App` to "Hello World".
 
 ```ts
 import { Component } from '@angular/core';
@@ -90,12 +90,12 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class App {
   title = 'Hello World';
 }
 ```
 
-Once you save the `app.component.ts` file, the running instance of the server will update the web page and you'll see "Welcome to Hello World!!".
+Once you save the `app.ts` file, the running instance of the server will update the web page and you'll see "Welcome to Hello World!!".
 
 >**Tip**: VS Code supports Auto Save, which by default saves your files after a delay. Check the **Auto Save** option in the **File** menu to turn on Auto Save or directly configure the `files.autoSave` user [setting](/docs/configure/settings.md).
 
@@ -109,7 +109,7 @@ To debug the client side Angular code, we'll use the built-in JavaScript debugge
 
 ### Set a breakpoint
 
-To set a breakpoint in `app.component.ts`, click on the gutter to the left of the line numbers. This will set a breakpoint which will be visible as a red circle.
+To set a breakpoint in `app.ts`, click on the gutter to the left of the line numbers. This will set a breakpoint which will be visible as a red circle.
 
 ![set a breakpoint](images/angular/breakpoint.png)
 
@@ -138,7 +138,7 @@ Press `kb(workbench.action.debug.start)` or the green arrow to launch the debugg
 
 ![hit breakpoint](images/angular/hit-breakpoint.png)
 
-You can step through your source code (`kb(workbench.action.debug.stepOver)`), inspect variables such as `AppComponent`, and see the call stack of the client side Angular application.
+You can step through your source code (`kb(workbench.action.debug.stepOver)`), inspect variables such as `App`, and see the call stack of the client side Angular application.
 
 ![debug variable](images/angular/debug-variable.png)
 

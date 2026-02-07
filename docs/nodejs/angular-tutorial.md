@@ -72,7 +72,7 @@ VS Code uses the TypeScript language service for code intelligence ([IntelliSens
 
 ### Go to Definition, Peek definition
 
-Through the TypeScript language service, VS Code can also provide type definition information in the editor through **Go to Definition** (`kb(editor.action.revealDefinition)`) or **Peek Definition** (`kb(editor.action.peekDefinition)`). Open the `app.module.ts` file and put the cursor over `App` in the `bootstrap` property declaration, right click and select **Peek Definition**. A [Peek window](/docs/editing/editingevolved.md#peek) will open showing the `App` definition from `app.ts`.
+Through the TypeScript language service, VS Code can also provide type definition information in the editor through **Go to Definition** (`kb(editor.action.revealDefinition)`) or **Peek Definition** (`kb(editor.action.peekDefinition)`). Open the `main.ts` file and put the cursor over `App` in the `bootstrapApplication` function, right click and select **Peek Definition**. A [Peek window](/docs/editing/editingevolved.md#peek) will open showing the `App` definition from `app.ts`.
 
 ![angular peek definition](images/angular/peek-definition.png)
 

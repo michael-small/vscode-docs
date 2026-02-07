@@ -80,22 +80,24 @@ Press `kbstyle(Escape)` to close the Peek window.
 
 ## Hello World
 
-Let's update the sample application to "Hello World". Go back to the `app.ts` file and change the `title` string in `App` to "Hello World".
+Let's update the sample application to "Hello World". Go back to the `app.ts` file and change the `title` signal in `App` to "World".
 
 ```ts
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
+  imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })
 export class App {
-  title = 'Hello World';
+  protected readonly title = signal('World');
 }
 ```
 
-Once you save the `app.ts` file, the running instance of the server will update the web page and you'll see "Welcome to Hello World!!".
+Once you save the `app.ts` file, the running instance of the server will update the web page and you'll see "Hello, World".
 
 >**Tip**: VS Code supports Auto Save, which by default saves your files after a delay. Check the **Auto Save** option in the **File** menu to turn on Auto Save or directly configure the `files.autoSave` user [setting](/docs/configure/settings.md).
 
